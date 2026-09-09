@@ -499,7 +499,40 @@
 
       <!-- INVESTMENTS PAGE -->
       <section class="page" id="page-investments">
-        <div class="invest-header-row">
+        <!-- In Development Overlay -->
+        <div class="invest-dev-overlay">
+          <div class="invest-dev-card">
+            <div class="invest-dev-icon">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <span class="invest-dev-badge">In Development</span>
+            <h2>Investments is Under Construction</h2>
+            <p>
+              We're currently building real-time bullion feeds, portfolio tracking, and performance analytics. This feature will be available soon!
+            </p>
+            <button
+              class="btn-primary"
+              style="margin-top: 6px; padding: 10px 10px; font-size: 15px"
+              onclick="navigate('dashboard')"
+            >
+              Back to Dashboard
+            </button>
+          </div>
+        </div>
+
+        <div class="page-blur-wrap">
+          <div class="invest-header-row">
           <div class="invest-summary-cards">
             <div class="invest-card gold-card">
               <div class="metal-icon">
@@ -685,7 +718,8 @@
             <div class="empty-state">No investments added yet.</div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <!-- BUDGET PAGE -->
       <section class="page" id="page-budget">

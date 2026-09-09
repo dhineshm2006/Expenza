@@ -140,7 +140,7 @@ function navigate(pageId) {
     },
     investments: {
       title: "Investments",
-      sub: "IN DEVELOPMENT**",
+      sub: "In development",
     },
     budget: { title: "Budget", sub: "Manage your monthly allocations" },
     settings: { title: "Settings", sub: "Configure rates and preferences" },
