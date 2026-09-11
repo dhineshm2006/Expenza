@@ -21,7 +21,6 @@ Expenza is a sleek, client-side **expense and investment tracker** built with pl
 ├── index.html      # App layout and page sections
 ├── style.css       # Visual design and responsive styles
 ├── app.js          # State, business logic, rendering, and interactions
-├── assets/         # Icons and static assets
 └── LICENSE
 ```
 ## Getting Started

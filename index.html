@@ -181,10 +181,10 @@
         <div class="topbar-right">
           <div class="date-badge" id="currentDate"></div>
           <button class="btn-add-income" onclick="openAddIncomeModal()">
-            <span>+</span> Add Income
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Add Income
           </button>
           <button class="btn-add-expense" onclick="openAddModal()">
-            <span>+</span> Add Expense
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Add Expense
           </button>
         </div>
       </header>
@@ -229,11 +229,11 @@
         <!-- Summary Cards -->
         <div class="cards-grid">
           <div class="card card-balance">
-            <div class="card-icon">
+            <!-- <div class="card-icon">
               <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <text x="50" y="70" font-size="80" font-family="Arial, sans-serif" text-anchor="middle" fill="#000000">₹</text>
               </svg>
-            </div>
+            </div> -->
             <div class="card-body">
               <span class="card-label">Total Balance</span>
               <span class="card-value" id="totalBalance">₹0</span>
@@ -663,9 +663,9 @@
                   <span class="rate-value gold-rate" id="liveGoldRate"
                     >₹7,450/g</span
                   >
-                  <span class="rate-change gold-up" id="goldRateChange"
-                    >▲ 0.3%</span
-                  >
+                  <span class="rate-change gold-up" id="goldRateChange">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>0.3%
+                  </span>
                 </div>
               </div>
               <div class="rate-divider"></div>
@@ -675,9 +675,9 @@
                   <span class="rate-value silver-rate" id="liveSilverRate"
                     >₹91/g</span
                   >
-                  <span class="rate-change silver-up" id="silverRateChange"
-                    >▲ 0.1%</span
-                  >
+                  <span class="rate-change silver-up" id="silverRateChange">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>0.1%
+                  </span>
                 </div>
               </div>
               <div class="rate-update-time">
@@ -861,7 +861,21 @@
       <div class="modal" onclick="event.stopPropagation()" id="expenseModal">
         <div class="modal-header">
           <h2 id="modalTitle">Add New Expense</h2>
-          <button class="modal-close" onclick="closeModal()">✕</button>
+          <button class="modal-close" onclick="closeModal()" aria-label="Close">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
         </div>
         <div class="modal-body">
           <div class="form-row">
